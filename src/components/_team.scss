@@ -1,23 +1,45 @@
 .team {
   margin-bottom: 4rem;
+  @media screen and (min-width: 768px) {
+    margin-top: 10rem;
+    display: flex;
+    gap: 15rem;
+  }
+}
+
+.team__info {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .team__quote {
   margin: 10rem 0 0.7rem 0;
   font: $heading5;
   color: $red;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .team__title {
   max-width: 28rem;
   margin-bottom: 1.4rem;
   font: $heading1;
+  @media screen and (min-width: 768px) {
+    max-width: 32rem;
+  }
 }
 
 .team__description {
   margin-bottom: 1.2rem;
   font: $heading6;
   color: $darkGray;
+  @media screen and (min-width: 768px) {
+    max-width: 27.3rem;
+  }
 }
 
 .team__img-container {

@@ -2,15 +2,24 @@
   padding: 0 3rem;
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 768px) {
+    padding: 0 22.5rem;
+  }
 }
 
 .form--footer {
   padding: 0;
   margin-bottom: 15.4rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .form__email {
   position: relative;
+  @media screen and (min-width: 768px) {
+    max-width: 35rem;
+  }
 }
 
 .form__label {
@@ -19,6 +28,10 @@
   font-size: 1rem;
   font-weight: 500;
   color: $gray;
+  @media screen and (min-width: 768px) {
+    font-size: 1.4rem;
+    color: $veryLightGray;
+  }
 }
 
 .form__input {
@@ -33,5 +46,8 @@
   outline: none;
   &::placeholder {
     color: $lightGray;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 1.8rem;
   }
 }

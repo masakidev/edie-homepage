@@ -1,8 +1,24 @@
+.cards {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
 .cards__title {
   max-width: 27.2rem;
   padding: 0 3rem;
   margin: 10.2rem 0 9.2rem 0;
   font: $heading2;
+  @media screen and (min-width: 768px) {
+    max-width: 34.6rem;
+    padding: 0;
+    margin: 20rem 11.3rem 4.2rem 11.3rem;
+    font: $heading1;
+  }
 }
 
 .card {
@@ -11,6 +27,9 @@
   border-radius: 1.2rem;
   &:hover {
     box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 

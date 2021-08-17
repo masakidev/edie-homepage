@@ -21,6 +21,21 @@ img {
   padding: 0 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 1110px;
+    padding: 0 5.2rem;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    max-width: 1110px;
+    margin: auto;
+  }
+}
+
 .header {
   height: 8rem;
   width: 100%;
@@ -36,6 +51,17 @@ img {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    height: 12rem;
+    padding: 4.2rem 5.2rem;
+  }
+}
+
+.header--is-active {
+  background: #333;
+}
+
 .logo {
   font-family: 'Heebo', sans-serif;
   font-size: 2.4rem;
@@ -43,14 +69,29 @@ img {
   color: #333;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 3.6rem;
+  }
+}
+
+.logo--is-active {
+  color: #F2F2F2;
+}
+
 .navbar__toggle {
   cursor: pointer;
+  color: #333;
 }
 
 @media screen and (min-width: 768px) {
   .navbar__toggle {
     display: none;
   }
+}
+
+.navbar__toggle--is-active {
+  color: #F2F2F2;
 }
 
 .navbar {
@@ -64,15 +105,16 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 3.6rem;
   }
 }
 
-.navbar__is-active {
+.navbar--is-active {
   left: 0;
-  top: 80px;
+  top: 8rem;
   width: 100%;
   position: absolute;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +162,14 @@ img {
 .navbar__element {
   font-size: 1.8rem;
   cursor: pointer;
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__element {
+    color: #333;
+  }
 }
 
 .main__img {
@@ -128,8 +178,15 @@ img {
 }
 
 .main__content {
-  margin: 1.5rem 0;
   padding: 0 3rem;
+  margin: 1.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main__content {
+    padding: 0 22.5rem;
+    margin: 5.4rem 0;
+  }
 }
 
 .main__content--margin {
@@ -142,8 +199,21 @@ img {
   color: #333;
 }
 
+@media screen and (min-width: 768px) {
+  .main__h1 {
+    max-width: 54.3rem;
+    font: 500 4.8rem/7.2rem "Poppins", sans-serif;
+  }
+}
+
 .main__h1--margin {
   margin-bottom: 3.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main__h1--margin {
+    max-width: 36.6rem;
+  }
 }
 
 .main__p {
@@ -152,8 +222,41 @@ img {
   color: #4F4F4F;
 }
 
+@media screen and (min-width: 768px) {
+  .main__p {
+    max-width: 36.6rem;
+    font: 400 1.8rem/2.7rem "Poppins", sans-serif;
+  }
+}
+
 .main__p--blue {
   color: #2D9CDB;
+}
+
+@media screen and (min-width: 768px) {
+  .main__p--blue {
+    margin-bottom: 1.6rem;
+    font-size: 500 1.8rem/2.7rem "Poppins", sans-serif;
+  }
+}
+
+.cards {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
 }
 
 .cards__title {
@@ -161,6 +264,15 @@ img {
   padding: 0 3rem;
   margin: 10.2rem 0 9.2rem 0;
   font: 500 2.4rem/3.6rem "Poppins", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .cards__title {
+    max-width: 34.6rem;
+    padding: 0;
+    margin: 20rem 11.3rem 4.2rem 11.3rem;
+    font: 500 3.6rem/5.4rem "Poppins", sans-serif;
+  }
 }
 
 .card {
@@ -172,6 +284,12 @@ img {
 .card:hover {
   -webkit-box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
           box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    margin-bottom: 0;
+  }
 }
 
 .card__icon {
@@ -219,11 +337,65 @@ img {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .projects {
+    position: relative;
+    margin-bottom: -17.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 'dashboard onboard' 'booking homepage';
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    row-gap: 10rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #dashboard {
+    grid-area: dashboard;
+    margin-top: 17.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #onboard {
+    grid-area: onboard;
+    margin-bottom: 17.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #booking {
+    grid-area: booking;
+    margin-bottom: 17.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #homepage {
+    grid-area: homepage;
+    margin-top: -17.6rem;
+    margin-bottom: 35.2rem;
+  }
+}
+
 .projects__title {
   max-width: 32rem;
   padding: 0 3rem;
   margin: 9.7rem 0 4.8rem 0;
   font: 500 2.4rem/3.6rem "Poppins", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__title {
+    max-width: 44.8rem;
+    margin: 19.4rem 0 1.2rem 0;
+    font: 500 3.6rem/5.4rem "Poppins", sans-serif;
+  }
 }
 
 .projects__more {
@@ -242,11 +414,26 @@ img {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .projects__more {
+    position: absolute;
+    bottom: 18.5rem;
+    right: 0;
+  }
+}
+
 .project {
   margin-bottom: 3.6rem;
 }
 
+@media screen and (min-width: 768px) {
+  .project {
+    margin-bottom: 0;
+  }
+}
+
 .project__img {
+  height: 90%;
   width: 100%;
   margin-bottom: 1.25rem;
   border-radius: 2.4rem;
@@ -265,10 +452,41 @@ img {
   margin-bottom: 4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .team {
+    margin-top: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .team__quote {
   margin: 10rem 0 0.7rem 0;
   font: 500 1.8rem/2.7rem "Poppins", sans-serif;
   color: #EB5757;
+}
+
+@media screen and (min-width: 768px) {
+  .team__quote {
+    margin-top: 0;
+  }
 }
 
 .team__title {
@@ -277,10 +495,22 @@ img {
   font: 500 3.6rem/5.4rem "Poppins", sans-serif;
 }
 
+@media screen and (min-width: 768px) {
+  .team__title {
+    max-width: 32rem;
+  }
+}
+
 .team__description {
   margin-bottom: 1.2rem;
   font: 400 1.8rem/2.7rem "Poppins", sans-serif;
   color: #4F4F4F;
+}
+
+@media screen and (min-width: 768px) {
+  .team__description {
+    max-width: 27.3rem;
+  }
 }
 
 .team__img-container {
@@ -333,6 +563,13 @@ img {
   font: 500 2.4rem/3.6rem "Poppins", sans-serif;
 }
 
+@media screen and (min-width: 768px) {
+  .quote__text {
+    max-width: 95rem;
+    font: 500 3.6rem/5.4rem "Poppins", sans-serif;
+  }
+}
+
 .quote__author {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,9 +603,26 @@ img {
   color: #4F4F4F;
 }
 
+.footer__wrapper {
+  background: black;
+}
+
 .footer {
   padding: 4.1rem;
-  background: black;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 5.2rem;
+    max-width: 1110px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .footer__menu {
@@ -383,14 +637,17 @@ img {
   gap: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__menu {
+    margin-bottom: 0;
+  }
+}
+
 .footer__menu-element {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font: 400 1.8rem/2.7rem "Poppins", sans-serif;
   color: #F2F2F2;
-  list-style: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .logo--footer {
@@ -405,10 +662,22 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 1.1rem;
 }
 
 .footer__credits {
+  padding-bottom: 2.4rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   color: #fff;
@@ -432,13 +701,31 @@ img {
           flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .form {
+    padding: 0 22.5rem;
+  }
+}
+
 .form--footer {
   padding: 0;
   margin-bottom: 15.4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .form--footer {
+    margin-bottom: 0;
+  }
+}
+
 .form__email {
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .form__email {
+    max-width: 35rem;
+  }
 }
 
 .form__label {
@@ -447,6 +734,13 @@ img {
   font-size: 1rem;
   font-weight: 500;
   color: #828282;
+}
+
+@media screen and (min-width: 768px) {
+  .form__label {
+    font-size: 1.4rem;
+    color: #F2F2F2;
+  }
 }
 
 .form__input {
@@ -477,6 +771,12 @@ img {
   color: #BDBDBD;
 }
 
+@media screen and (min-width: 768px) {
+  .form__input {
+    font-size: 1.8rem;
+  }
+}
+
 .btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -496,6 +796,12 @@ img {
   background: #2D9CDB;
   font-size: 1.4rem;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--submit {
+    font-size: 1.8rem;
+  }
 }
 
 .btn--started {

@@ -1,5 +1,47 @@
 .projects {
   width: 100%;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    margin-bottom: -17.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+      'dashboard onboard'
+      'booking homepage';
+    column-gap: 2rem;
+    row-gap: 10rem;
+  }
+}
+
+#dashboard {
+  @media screen and (min-width: 768px) {
+    grid-area: dashboard;
+    margin-top: 17.6rem;
+  }
+  
+}
+
+#onboard {
+  @media screen and (min-width: 768px) {
+    grid-area: onboard;
+    margin-bottom: 17.6rem;
+  }
+}
+
+#booking {
+  @media screen and (min-width: 768px) {
+    grid-area: booking;
+    margin-bottom: 17.6rem;
+  }
+}
+
+#homepage {
+  @media screen and (min-width: 768px) {
+    grid-area: homepage;
+    margin-top: -17.6rem;
+    margin-bottom: 17.6*2rem;
+  }
 }
 
 .projects__title {
@@ -7,6 +49,11 @@
   padding: 0 3rem;
   margin: 9.7rem 0 4.8rem 0;
   font: $heading2;
+  @media screen and (min-width: 768px) {
+    max-width: 44.8rem;
+    margin: 19.4rem 0 1.2rem 0;
+    font: $heading1;
+  }
 }
 
 .projects__more {
@@ -17,13 +64,22 @@
   font: $heading5;
   color: $blue;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 18.5rem;
+    right: 0;
+  }
 }
 
 .project {
   margin-bottom: 3.6rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .project__img {
+  height: 90%;
   width: 100%;
   margin-bottom: 1.25rem;
   border-radius: 2.4rem;

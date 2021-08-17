@@ -1,6 +1,16 @@
+.footer__wrapper {
+  background: black;
+}
+
 .footer {
   padding: 4.1rem;
-  background: black;
+  @media screen and (min-width: 768px) {
+    padding: 5.2rem;
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__menu {
@@ -8,14 +18,16 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
-.footer__menu-element {
-  width: fit-content;
+.footer__menu-element{
   font: $heading6;
   color: $veryLightGray;
-  list-style: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .logo--footer {
@@ -28,10 +40,17 @@
 .footer__social {
   margin-bottom: 6.5rem;
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__logos {
+  display: flex;
   gap: 1.1rem;
 }
 
 .footer__credits {
+  padding-bottom: 2.4rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   color: $white;

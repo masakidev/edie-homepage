@@ -5,6 +5,10 @@
 .quote__text {
   margin-bottom: 3.1rem;
   font: $quote;
+  @media screen and (min-width: 768px) {
+    max-width: 95rem;
+    font: $heading1;
+  }
 }
 
 .quote__author {

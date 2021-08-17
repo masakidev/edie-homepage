@@ -11,19 +11,21 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <span class="logo">Edie</span>
-    <span class="material-icons navbar__toggle" id="navbar__toggle">
-      menu
-    </span>
-    <nav class="navbar" id="navbar">
-        <li class="navbar__element">Home</li>
-        <li class="navbar__element">Services</li>
-        <li class="navbar__element">Our Works</li>
-        <li class="navbar__element">Clients</li>
-        <li class="navbar__element">Contact</li>
-    </nav>
-  </header>
+  <div class="header__wrapper">
+    <header class="header" id="header">
+      <span class="logo" id="logo">Edie</span>
+      <span class="material-icons navbar__toggle" id="navbar__toggle">
+        menu
+      </span>
+      <nav class="navbar" id="navbar">
+        <li><a class="navbar__element" href="#header">Home</a></li>
+        <li><a class="navbar__element" href="#services">Services</a></li>
+        <li><a class="navbar__element" href="#projects">Our Works</a></li>
+        <li><a class="navbar__element" href="#clients">Clients</a></li>
+        <li><a class="navbar__element" href="#contact">Contact</a></li>
+      </nav>
+    </header>
+  </div>
   <!-- Header -->
   <div class="wrapper">
     <!-- Main -->
@@ -49,8 +51,8 @@
     </main>
     <!-- Main -->
     <!-- Cards -->
+    <h1 class="cards__title" id="services">We offer high demand services</h1>
     <section class="cards">
-      <h1 class="cards__title">We offer high demand services</h1>
       <div class="card">
         <span class="material-icons card__icon card__icon--blue">
           create
@@ -90,9 +92,9 @@
     </section>
     <!-- Cards -->
     <!-- Projects -->
+    <h1 class="projects__title" id="projects">Good design means good business</h1>
     <section class="projects">
-      <h1 class="projects__title">Good design means good business</h1>
-      <div class="project">
+      <div class="project" id="dashboard">
         <img class="project__img" src="./images/smarthome.jpg" alt="smart home project">
         <p class="project__type">
           Fullstack application
@@ -101,7 +103,7 @@
           Smart home dashboard
         </h1>
       </div>
-      <div class="project">
+      <div class="project" id="onboard">
         <img class="project__img" src="./images/onboard.png" alt="onboard project">
         <p class="project__type">
           UX/UI design
@@ -110,7 +112,7 @@
           Onboard application
         </h1>
       </div>
-      <div class="project">
+      <div class="project" id="booking">
         <img class="project__img" src="./images/booking.png" alt="booking project">
         <p class="project__type">
           Mobile application</p>
@@ -118,7 +120,7 @@
           Booking system
         </h1>
       </div>
-      <div class="project">
+      <div class="project" id="homepage">
         <img class="project__img" src="./images/juice-product.png" alt="juice product project">
         <p class="project__type">
           Front End application</p>
@@ -128,18 +130,21 @@
       </div>
       <h2 class="projects__more">see more <span class="material-icons">trending_flat</span></h2>
     </section>
+    
     <!-- Projects -->
     <!-- Team -->
     <section class="team">
-      <p class="team__quote">
-        Meet the team
-      </p>
-      <h1 class="team__title">
-        We are chilled and laidback team
-      </h1>
-      <p class="team__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
+      <div class="team__info">
+        <p class="team__quote">
+          Meet the team
+        </p>
+        <h1 class="team__title">
+          We are chilled and laidback team
+        </h1>
+        <p class="team__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
       <div class="team__img-container">
         <img class="team__img" id="person-3" src="./images/person3.png" alt="person 3">
         <img class="team__img" id="person-2" src="./images/person2.png" alt="person 2">
@@ -148,7 +153,7 @@
     </section>
     <!-- Team -->
     <!-- Quote -->
-    <div class="quote">
+    <div class="quote" id="clients">
       <p class="quote__text">
         “Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
       </p>
@@ -167,29 +172,33 @@
     <!-- Quote -->
   </div>
   <!-- Footer -->
-  <footer class="footer">
-    <ul class="footer__menu">
-      <li class="footer__menu-element">Home</li>
-      <li class="footer__menu-element">Services</li>
-      <li class="footer__menu-element">Our Works</li>
-      <li class="footer__menu-element">Clients</li>
-      <li class="footer__menu-element">Contact</li>
-  </ul>
-  <span class="logo--footer">Edie</span>
-  <div class="footer__social">
-    <img src="./images/instagram.svg" alt="instagram logo">
-    <img src="./images/linkedin.svg" alt="linkedin logo">
-    <img src="./images/twitter.svg" alt="twitter logo">
+  <div class="footer__wrapper">
+    <footer class="footer" id="contact">
+      <ul class="footer__menu">
+        <li><a class="footer__menu-element" href="#header">Home</a></li>
+        <li><a class="footer__menu-element" href="#services">Services</a></li>
+        <li><a class="footer__menu-element" href="#projects">Our Works</a></li>
+        <li><a class="footer__menu-element" href="#clients">Clients</a></li>
+        <li><a class="footer__menu-element" href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer__social">
+      <span class="logo--footer" id="logo--footer">Edie</span>
+      <div class="footer__logos">
+        <img id="ig" src="./images/instagram.svg" alt="instagram logo">
+        <img id="in" src="./images/linkedin.svg" alt="linkedin logo">
+        <img id="tw" src="./images/twitter.svg" alt="twitter logo">
+      </div>
+    </div>
+    <div class="form form--footer">
+      <label class="form__label" for="email">Want us to contact you?</label>
+      <form class="form__email">
+        <input class="form__input" type="email" name="email" placeholder="Email">
+        <button class="btn btn--submit" type="submit">Join</button>
+      </form>
+    </div>
+    </footer>
+    <p class="footer__credits">Coded by <a class="footer__a" href="https://github.com/masakidev">masakidev</a> - <a class="footer__a" href="https://devchallenges.io">devChallenges.io</a></p>
   </div>
-  <div class="form form--footer">
-    <label class="form__label" for="email">Want us to contact you?</label>
-    <form class="form__email">
-      <input class="form__input" type="email" name="email" placeholder="Email">
-      <button class="btn btn--submit" type="submit">Join</button>
-    </form>
-  </div>
-  <p class="footer__credits">Coded by <a class="footer__a" href="https://github.com/masakidev">masakidev</a> - <a class="footer__a" href="https://devchallenges.io">devChallenges.io</a></p>
-  </footer>
   <!-- Footer -->
   <script src="js/app.js"></script>
 </body>

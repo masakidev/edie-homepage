@@ -4,8 +4,12 @@
 }
 
 .main__content {
-  margin: 1.5rem 0;
   padding: 0 3rem;
+  margin: 1.5rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 0 22.5rem;
+    margin: 5.4rem 0;
+  }
 }
 
 .main__content--margin {
@@ -16,18 +20,33 @@
   max-width: 27.2rem;
   font: $heading2;
   color: $veryDarkGray;
+  @media screen and (min-width: 768px) {
+    max-width: 54.3rem;
+    font: $heading7;
+  }
 }
 
 .main__h1--margin {
   margin-bottom: 3.3rem;
+  @media screen and (min-width: 768px) {
+    max-width: 36.6rem;
+  }
 }
 
 .main__p {
   max-width: 27.5rem;
   font: $paragraph;
   color: $darkGray;
+  @media screen and (min-width: 768px) {
+    max-width: 36.6rem;
+    font: $heading6;
+  }
 }
 
 .main__p--blue {
   color: $blue;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 1.6rem;
+    font-size: $heading5;
+  }
 }
