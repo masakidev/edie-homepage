@@ -1,0 +1,33 @@
+.main__img {
+  width: 100%;
+  border-radius: 1.8rem;
+}
+
+.main__content {
+  margin: 1.5rem 0;
+  padding: 0 3rem;
+}
+
+.main__content--margin {
+  margin-bottom: 3.1rem;
+}
+
+.main__h1 {
+  max-width: 27.2rem;
+  font: $heading2;
+  color: $veryDarkGray;
+}
+
+.main__h1--margin {
+  margin-bottom: 3.3rem;
+}
+
+.main__p {
+  max-width: 27.5rem;
+  font: $paragraph;
+  color: $darkGray;
+}
+
+.main__p--blue {
+  color: $blue;
+}

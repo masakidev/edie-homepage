@@ -1,0 +1,39 @@
+.projects {
+  width: 100%;
+}
+
+.projects__title {
+  max-width: 32rem;
+  padding: 0 3rem;
+  margin: 9.7rem 0 4.8rem 0;
+  font: $heading2;
+}
+
+.projects__more {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font: $heading5;
+  color: $blue;
+  cursor: pointer;
+}
+
+.project {
+  margin-bottom: 3.6rem;
+}
+
+.project__img {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  border-radius: 2.4rem;
+}
+
+.project__type {
+  font: $paragraph3;
+  color: $gray;
+}
+
+.project__name {
+  font: $heading5;
+}

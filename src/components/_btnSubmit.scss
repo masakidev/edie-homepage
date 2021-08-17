@@ -1,0 +1,29 @@
+.btn {
+  width: fit-content;
+  padding: 1.2rem 2.0rem;
+  border-style: none;
+  border-radius: 1.2rem;
+  font: $paragraph;
+  cursor: pointer;
+}
+
+.btn--submit {
+  top: 0;
+  right: 0;
+  margin: 0.3rem 0.3rem;
+  position: absolute;
+  background: $blue;
+  font-size: 1.4rem;
+  color: $white;
+}
+
+.btn--started {
+  padding: 0.9rem 1.2rem;
+  background: $btnBg;
+  font-size: 1.6rem;
+  color: $gray;
+  &:hover {
+    background: $blue;
+    color: $white;
+  }
+}
